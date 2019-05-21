@@ -1,10 +1,10 @@
 /*jslint browser, es6 */
+
 /*global window */
 // <link rel="stylesheet" href="styles/main.css" />;
 // window.onload = function() {
 //   const CSSPreProcessor = `Sass`;
 // const JSVersion = `ES6`;
-
 //   let body = document.querySelector(`body`);
 //   let paragraph = document.createElement(`p`);
 //   let text = document.createTextNode(
@@ -17,19 +17,16 @@
 //   paragraph.appendChild(text);
 //   body.appendChild(paragraph);
 // };
-setTimeout(function() {
+setTimeout(function () {
   $("#loaders").fadeOut("fast");
 }, 5000);
-setTimeout(function() {
+setTimeout(function () {
   $("#download").show();
-}, 5100);
-
-// $(document).ready(function() {
+}, 5100); // $(document).ready(function() {
 //   setTimeout(function() {
 //     $("#proceed").show();
 //   }, 5500);
 // });
-
 // window.setTimeout(function() {
 //   window.location.href = "http://www.google.com";
 // }, 5100);

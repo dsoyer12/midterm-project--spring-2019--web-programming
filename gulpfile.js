@@ -51,7 +51,7 @@ let compressHTML = () => {
     .pipe(htmlCompressor({ collapseWhitespace: true }))
     .pipe(dest(`prod`));
 };
-//
+
 let compileCSSForDev = () => {
   return src(`dev/styles/main.scss`)
     .pipe(
@@ -62,7 +62,7 @@ let compileCSSForDev = () => {
     )
     .pipe(dest(`temp/styles`));
 };
-//
+
 let compileCSSForProd = () => {
   return src(`dev/styles/main.scss`)
     .pipe(
@@ -86,7 +86,7 @@ let transpileJSForProd = () => {
     .pipe(jsCompressor())
     .pipe(dest(`prod/scripts`));
 };
-//
+
 let lintJS = () => {
   return src(`dev/scripts/*.js`)
     .pipe(
@@ -143,7 +143,7 @@ let compressImages = () => {
     )
     .pipe(dest(`prod/img`));
 };
-//
+
 let serve = () => {
   browserSync({
     notify: true,

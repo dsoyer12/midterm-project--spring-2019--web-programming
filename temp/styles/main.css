@@ -1,3 +1,121 @@
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+section,
+samp,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   background-color: white;
   text-align: center;
@@ -15,9 +133,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 0;
 }
+
 .hollowLoader {
   z-index: 999;
   width: 0.5em;
@@ -25,13 +143,15 @@ body {
   animation: loaderAnim 1.25s infinite ease-in-out;
   outline: 1px solid transparent;
 }
+
 .hollowLoader .largeBox {
   height: 0.5em;
   width: 0.5em;
-  background-color: rgb(191, 172, 3);
+  background-color: #bfac03;
   outline: 1px solid transparent;
   position: fixed;
 }
+
 .hollowLoader .smallBox {
   height: 0.5em;
   width: 0.5em;
@@ -86,36 +206,47 @@ a {
 .c-link--facebook:hover {
   color: #3b5998;
 }
+
 .c-link--twitter:hover {
   color: #55acee;
 }
+
 .c-link--google:hover {
   color: #dd4b39;
 }
+
 .c-link--pinterest:hover {
   color: #bd081c;
 }
+
 .c-link--instagram:hover {
   color: #833ab4;
 }
+
 .c-link--snapchat:hover {
   color: #fbe00f;
 }
+
 .c-link--facebook:hover::after {
   background: #3b5998;
 }
+
 .c-link--twitter:hover::after {
   background: #55acee;
 }
+
 .c-link--google:hover::after {
   background: #dd4b39;
 }
+
 .c-link--pinterest:hover::after {
   background: #bd081c;
 }
+
 .c-link--instagram:hover::after {
   background: #833ab4;
 }
+
 .c-link--snapchat:hover::after {
   background: #fbe00f;
 }
@@ -171,6 +302,7 @@ a {
   margin: 0;
   display: flex;
 }
+
 .bottombar {
   position: fixed;
   bottom: 0;
@@ -184,6 +316,7 @@ a {
   width: 100%;
   z-index: 0.5 !important;
 }
+
 .topbar {
   position: fixed;
   top: 0;
@@ -197,11 +330,11 @@ a {
   width: 100%;
   z-index: 0.5 !important;
 }
+
 footer {
   position: fixed;
   bottom: 50px;
   width: 100%;
-
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -216,4 +349,53 @@ footer {
 
 #download {
   position: fixed;
+}
+
+.logo {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logobackground {
+  background-color: #c8b273;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: -1;
+  position: fixed;
+}
+
+.logo img {
+  height: auto;
+  max-width: 30%;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  z-index: 999999 !important;
+  border: 1px white;
+  color: white;
+  font-family: Arial;
+  font-size: large;
+  text-decoration: none;
+  padding-top: 15%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
